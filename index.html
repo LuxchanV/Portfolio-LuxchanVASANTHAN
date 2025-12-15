@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Luxchan Vasanthan – Portfolio</title>
+  <meta name="description" content="Portfolio de Luxchan Vasanthan, étudiant en développement web & graphisme. Projets web, affiches, design." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#05070a" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <!-- Global -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- Home only -->
+  <link rel="stylesheet" href="./css/home.css" />
+</head>
+
+<body class="intro-active home">
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- ================= INTRO SIMPLE ================= -->
+  <div id="intro-overlay" class="intro-overlay intro-simple" aria-hidden="false">
+    <div class="intro-card" role="dialog" aria-modal="true" aria-label="Intro du portfolio">
+      <p class="intro-kicker">BIENVENUE</p>
+
+      <h1 class="intro-title">
+        Portfolio de <span>Luxchan</span> Vasanthan
+      </h1>
+
+      <p class="intro-sub">
+        BUT MMI — <strong>Front-end</strong> • <strong>UI / Graphisme</strong>
+      </p>
+
+      <div class="intro-actions">
+        <button id="enter-portfolio" class="btn btn-main" type="button">
+          <i class="fa-solid fa-arrow-right-long"></i> Découvrir
+        </button>
+        <a class="btn btn-ghost" href="./html/cv.html">
+          <i class="fa-solid fa-file-lines"></i> Voir mon CV
+        </a>
+      </div>
+
+      <p class="intro-note">
+        Astuce : tu peux fermer aussi avec <strong>Échap</strong> ou en cliquant en dehors.
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="./index.html" class="logo" aria-label="Retour à l’accueil">
+        <span class="logo-mark">LV</span>
+        <span class="logo-text">Luxchan <span>Vasanthan</span></span>
+      </a>
+
+      <button class="nav-toggle" id="menu-icon" type="button"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
+        <a href="#hero">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+
+        <div class="nav-item has-mega" id="mega-item">
+          <button class="nav-link mega-trigger" id="mega-trigger" type="button"
+                  aria-expanded="false" aria-controls="mega-menu">
+            Réalisations <span class="chevron" aria-hidden="true">⌄</span>
+          </button>
+
+          <div class="mega-menu" id="mega-menu" role="menu" aria-label="Menu réalisations">
+            <div class="mega-col">
+              <h3>Développement web</h3>
+              <a href="./html/galerie-web.html"><span class="emoji">💻</span> Sites web & interfaces</a>
+            </div>
+            <div class="mega-col">
+              <h3>Graphisme</h3>
+              <a href="./html/galerie-graphisme.html"><span class="emoji">🎨</span> Affiches & créations</a>
+            </div>
+            <div class="mega-col">
+              <h3>Audiovisuel</h3>
+              <a href="./html/galerie-audiovisuel.html"><span class="emoji">🎬</span> Projet audiovisuel</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="./html/cv.html">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section id="hero" class="hero hero-v3">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="./img/background-torn.jpg" alt="" class="hero-bg-img" loading="lazy" />
+      </div>
+
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <!-- Floating projects -->
+      <div class="hero-floats" aria-hidden="true">
+        <a class="float-card fc-1" href="./html/galerie-web.html" tabindex="-1">
+          <img src="./img/AmbianceSkandale1.png" alt="" loading="lazy" />
+          <span>Site musique</span>
+        </a>
+
+        <a class="float-card fc-2" href="./html/galerie-web.html" tabindex="-1">
+          <img src="./img/hiptown1.png" alt="" loading="lazy" />
+          <span>UI (stage)</span>
+        </a>
+
+        <a class="float-card fc-3" href="./html/galerie-graphisme.html" tabindex="-1">
+          <img src="./img/cloone-rose.png" alt="" loading="lazy" />
+          <span>Affiches</span>
+        </a>
+
+        <a class="float-card fc-4" href="./html/galerie-graphisme.html" tabindex="-1">
+          <img src="./img/carwash1.png" alt="" loading="lazy" />
+          <span>Design promo</span>
+        </a>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-center">
+          <p class="hero-kicker">BUT MMI • FRONT-END • UI / GRAPHISME</p>
+
+          <h1 class="hero-title">
+            Portfolio<span class="dot">.</span>
+          </h1>
+
+          <p class="hero-sub">
+            <strong>Luxchan Vasanthan</strong> — je transforme une idée en rendu <strong>clair</strong> et <strong>pro</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-main" href="#preview">
+              <i class="fa-solid fa-layer-group"></i> Voir mes réalisations
+            </a>
+            <a class="btn btn-ghost" href="#about">
+              <i class="fa-solid fa-circle-info"></i> En savoir plus
+            </a>
+          </div>
+
+          <div class="hero-pills" aria-label="Spécialités">
+            <span><i class="fa-solid fa-code"></i> Front-end</span>
+            <span><i class="fa-solid fa-pen-nib"></i> UI / Graphisme</span>
+          </div>
+
+          <a class="scroll-indicator" href="#about" aria-label="Aller à À propos">
+            <span class="scroll-dot" aria-hidden="true"></span>
+            <span class="scroll-text">Scroll</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= À PROPOS ================= -->
+    <section id="about" class="section about about-v3">
+      <div class="section-inner about-grid">
+        <div class="about-media about-photo-style">
+          <img src="./img/PHOTOLV.jpg" alt="Photo de Luxchan Vasanthan" loading="lazy" />
+          <div class="about-photo-badge" aria-hidden="true">
+            <span class="dot"></span> Disponible (stage / alternance)
+          </div>
+        </div>
+
+        <div class="about-panel">
+          <h2 class="section-title">Luxchan <span>Vasanthan</span></h2>
+          <h3 class="section-subtitle">Étudiant en BUT MMI — Développement web & création graphique</h3>
+
+          <p>
+            Je conçois des projets où le <strong>design</strong> sert vraiment l’usage.
+            J’aime quand tout est clair : une hiérarchie propre, des espacements justes, une navigation simple et un style cohérent.
+          </p>
+
+          <p>
+            Sur mes projets, je travaille autant la <strong>structure</strong> (sections, parcours, responsive)
+            que l’<strong>impact visuel</strong> (typographie, couleurs, composition, micro-interactions).
+            Objectif : un rendu “pro” qui inspire confiance.
+          </p>
+
+          <div class="about-tags">
+            <span>HTML / CSS / JS</span>
+            <span>Bootstrap</span>
+            <span>Chart.js</span>
+            <span>Figma</span>
+            <span>Photoshop</span>
+            <span>Illustrator</span>
+          </div>
+
+          <div class="about-actions">
+            <a class="btn btn-main" href="./html/cv.html">
+              <i class="fa-solid fa-file-lines"></i> Consulter mon CV
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              <i class="fa-solid fa-paper-plane"></i> Me contacter
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMPÉTENCES ================= -->
+    <section id="skills" class="section skills skills-v3">
+      <div class="section-inner">
+        <header class="section-header">
+          <h2 class="section-title">Compétences<span> :</span></h2>
+          <p class="section-subtitle">Outils & skills que j’utilise pour livrer des rendus propres et cohérents.</p>
+        </header>
+
+        <div class="tools-grid">
+          <article class="tool-card">
+            <img class="tool-logo" alt="HTML" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDk2IDk2Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwYjEyMjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZjk3MzE2IiBzdG9wLW9wYWNpdHk9IjAuMjUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSJ1cmwoI2cpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xMCkiLz4KICA8dGV4dCB4PSI0OCIgeT0iNTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJQb3BwaW5zLE1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmZmZmYiPkhUTUw8L3RleHQ+Cjwvc3ZnPg==">
+            <h3>HTML</h3>
+            <p>Structure clean, sections claires, SEO de base.</p>
+          </article>
+
+          <article class="tool-card">
+            <img class="tool-logo" alt="CSS" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDk2IDk2Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwYjEyMjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzhiZGY4IiBzdG9wLW9wYWNpdHk9IjAuMjUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSJ1cmwoI2cpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xMCkiLz4KICA8dGV4dCB4PSI0OCIgeT0iNTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJQb3BwaW5zLE1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmZmZmYiPkNTUzwvdGV4dD4KPC9zdmc+">
+            <h3>CSS</h3>
+            <p>UI soignée, responsive, détails “premium”.</p>
+          </article>
+
+          <article class="tool-card">
+            <img class="tool-logo" alt="JavaScript" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDk2IDk2Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwYjEyMjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmFjYzE1IiBzdG9wLW9wYWNpdHk9IjAuMjUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSJ1cmwoI2cpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xMCkiLz4KICA8dGV4dCB4PSI0OCIgeT0iNTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJQb3BwaW5zLE1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmZmZmYiPkpTPC90ZXh0Pgo8L3N2Zz4=">
+            <h3>JavaScript</h3>
+            <p>Interactions, menus, micro-effets propres.</p>
+          </article>
+
+          <article class="tool-card">
+            <img class="tool-logo" alt="Bootstrap" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDk2IDk2Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwYjEyMjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYTg1NWY3IiBzdG9wLW9wYWNpdHk9IjAuMjUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSJ1cmwoI2cpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xMCkiLz4KICA8dGV4dCB4PSI0OCIgeT0iNTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJQb3BwaW5zLE1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmZmZmYiPkI8L3RleHQ+CiAgPHRleHQgeD0iNDgiIHk9IjcyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iUG9wcGlucyxNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuNzUpIj5CUzwvdGV4dD4KPC9zdmc+">
+            <h3>Bootstrap</h3>
+            <p>Grilles, composants, pages rapides & propres.</p>
+          </article>
+
+          <article class="tool-card">
+            <img class="tool-logo" alt="Chart.js" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDk2IDk2Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwYjEyMjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmI3MTg1IiBzdG9wLW9wYWNpdHk9IjAuMjUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSJ1cmwoI2cpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xMCkiLz4KICA8dGV4dCB4PSI0OCIgeT0iNTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJQb3BwaW5zLE1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmZmZmYiPkM8L3RleHQ+CiAgPHRleHQgeD0iNDgiIHk9IjcyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iUG9wcGlucyxNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuNzUpIj5DaGFydDwvdGV4dD4KPC9zdmc+">
+            <h3>Chart.js</h3>
+            <p>Dashboards, KPI, lisibilité de la donnée.</p>
+          </article>
+
+          <article class="tool-card">
+            <img class="tool-logo" alt="Figma" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDk2IDk2Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwYjEyMjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYTc4YmZhIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSJ1cmwoI2cpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xMCkiLz4KICA8dGV4dCB4PSI0OCIgeT0iNTQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJQb3BwaW5zLE1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmZmZmYiPkY8L3RleHQ+CiAgPHRleHQgeD0iNDgiIHk9IjcyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iUG9wcGlucyxNb250c2VycmF0LEFyaWFsIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuNzUpIj5GaWdtYTwvdGV4dD4KPC9zdmc+">
+            <h3>Figma</h3>
+            <p>Maquettes, UI system, hiérarchie & spacing.</p>
+          </article>
+
+          <article class="tool-card">
+            <img class="tool-logo" alt="Photoshop" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDk2IDk2Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwYjEyMjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjBhNWZhIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSJ1cmwoI2cpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xMCkiLz4KICA8dGV4dCB4PSI0OCIgeT0iNTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJQb3BwaW5zLE1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmZmZmYiPlBzPC90ZXh0Pgo8L3N2Zz4=">
+            <h3>Photoshop</h3>
+            <p>Compo, retouches, exports propres.</p>
+          </article>
+
+          <article class="tool-card">
+            <img class="tool-logo" alt="Illustrator" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiIgdmlld0JveD0iMCAwIDk2IDk2Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwYjEyMjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZjU5ZTBiIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcng9IjIwIiBmaWxsPSJ1cmwoI2cpIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xMCkiLz4KICA8dGV4dCB4PSI0OCIgeT0iNTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJQb3BwaW5zLE1vbnRzZXJyYXQsQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmZmZmYiPkFpPC90ZXh0Pgo8L3N2Zz4=">
+            <h3>Illustrator</h3>
+            <p>Vectoriel, affiches, identité & déclinaisons.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= APERÇU PROJETS ================= -->
+    <section class="section projects-preview" id="preview">
+      <div class="section-inner">
+        <header class="section-header">
+          <h2 class="section-title">Mes dernières réalisations<span> :</span></h2>
+          <p class="section-subtitle">Une sélection rapide (mini brief). Pour tout voir : “Réalisations”.</p>
+        </header>
+
+        <div class="preview-columns">
+          <div class="preview-block">
+            <h3 class="preview-title">Développement Web</h3>
+            <p>Interfaces propres, lisibles, et finitions “pro” : vitrine immersive, pages UI (stage), etc.</p>
+
+            <div class="preview-cards">
+              <article class="preview-card">
+                <div class="preview-thumb">
+                  <img src="./img/AmbianceSkandale1.png" alt="Site groupe de musique" loading="lazy" />
+                </div>
+                <div class="preview-body">
+                  <h4>Site pour un groupe de musique</h4>
+                  <p>Vitrine immersive + DA forte (hero, médias, concerts) en restant super lisible.</p>
+                </div>
+              </article>
+
+              <article class="preview-card">
+                <div class="preview-thumb">
+                  <img src="./img/hiptown1.png" alt="Hiptown – pages web" loading="lazy" />
+                </div>
+                <div class="preview-body">
+                  <h4>Hiptown — Pages web (stage)</h4>
+                  <p>Intégration fidèle aux maquettes, composants UI, responsive, finitions clean.</p>
+                </div>
+              </article>
+            </div>
+
+            <a href="./html/galerie-web.html" class="preview-link">
+              Voir tous les projets web <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="preview-block">
+            <h3 class="preview-title">Graphisme</h3>
+            <p>Affiches, mise en page, visuels promo : composition, typo, cohérence de marque.</p>
+
+            <div class="preview-cards">
+              <article class="preview-card">
+                <div class="preview-thumb">
+                  <img src="./img/cloone-rose.png" alt="Affiches Cloone" loading="lazy" />
+                </div>
+                <div class="preview-body">
+                  <h4>Affiches “Cloone”</h4>
+                  <p>Concept fictif : ambiance, contrastes, typographie et déclinaisons.</p>
+                </div>
+              </article>
+
+              <article class="preview-card">
+                <div class="preview-thumb">
+                  <img src="./img/carwash1.png" alt="Golden Car Wash – affiches" loading="lazy" />
+                </div>
+                <div class="preview-body">
+                  <h4>Golden Car Wash (stage)</h4>
+                  <p>Affiches promo : message clair, retouches, déclinaisons prêtes print & réseaux.</p>
+                </div>
+              </article>
+            </div>
+
+            <a href="./html/galerie-graphisme.html" class="preview-link">
+              Voir toutes les créations <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section contact">
+      <div class="section-inner contact-inner">
+        <div class="contact-left">
+          <h2 class="section-title">Contact</h2>
+          <p>
+            Si tu as un projet (site, interface, affiche, identité) ou juste une idée à clarifier :
+            je peux t’aider à transformer ça en rendu propre et cohérent.
+          </p>
+
+          <div class="contact-infos">
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <span>Téléphone</span>
+                <a href="tel:+33768158311">07 68 15 83 11</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span>E-mail</span>
+                <a href="mailto:luxchan.vasanthan@gmail.com">luxchan.vasanthan@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-brands fa-linkedin"></i>
+              <div>
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/luxchan-v-40a2222a0" target="_blank" rel="noopener noreferrer">luxchan-vasanthan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form" action="#" method="post" autocomplete="on">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Nom complet</label>
+                <input id="name" name="name" type="text" placeholder="Votre nom" required autocomplete="name" />
+              </div>
+              <div class="form-field">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="vous@example.com" required autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Sujet</label>
+              <input id="subject" name="subject" type="text" placeholder="Création d’un site, affiche, identité..." />
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet (objectif, délai, contenu)..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-main full-width">
+              <i class="fa-solid fa-paper-plane"></i> Envoyer
+            </button>
+
+            <p class="form-note">(Formulaire statique : En cours de back-end )</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> – Luxchan Vasanthan</p>
+      <p>Portfolio étudiant – Développement Web &amp; Graphisme.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js" defer></script>
+
+  <!-- Intro simple (close) -->
+  <script>
+    (function () {
+      const year = document.getElementById("year");
+      if (year) year.textContent = new Date().getFullYear();
+
+      const intro = document.getElementById("intro-overlay");
+      const enterBtn = document.getElementById("enter-portfolio");
+      if (!intro || !enterBtn) return;
+
+      const closeIntro = () => {
+        intro.classList.add("hide");
+        document.body.classList.remove("intro-active");
+        intro.setAttribute("aria-hidden", "true");
+      };
+
+      enterBtn.addEventListener("click", closeIntro);
+      intro.addEventListener("click", (e) => { if (e.target === intro) closeIntro(); });
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeIntro(); });
+    })();
+  </script>
+</body>
+</html>

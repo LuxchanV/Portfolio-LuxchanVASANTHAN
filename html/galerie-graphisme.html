@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Graphisme – Luxchan</title>
+  <meta name="description" content="Affiches, magazines et design réalisés par Luxchan Vasanthan." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="header">
+    <div class="nav-container">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark">LV</span>
+        <span class="logo-text">Luxchan <span>Vasanthan</span></span>
+      </a>
+
+      <button class="nav-toggle" id="menu-icon" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="../index.html#hero">Accueil</a>
+        <a href="../index.html#about">À propos</a>
+        <a href="../index.html#skills">Compétences</a>
+
+        <div class="nav-item has-mega" id="mega-item">
+          <button class="nav-link mega-trigger" id="mega-trigger" type="button" aria-expanded="false" aria-controls="mega-menu">
+            Réalisations <span class="chevron">⌄</span>
+          </button>
+
+          <div class="mega-menu" id="mega-menu">
+            <div class="mega-col">
+              <h3>Développement web</h3>
+              <a href="./galerie-web.html"><span class="emoji">💻</span> Sites web & interfaces</a>
+            </div>
+            <div class="mega-col">
+              <h3>Graphisme</h3>
+              <a href="./galerie-graphisme.html"><span class="emoji">🎨</span> Affiches & créations</a>
+            </div>
+            <div class="mega-col">
+              <h3>Audiovisuel</h3>
+              <a href="./galerie-audiovisuel.html"><span class="emoji">🎬</span> Projet audiovisuel</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="./cv.html">CV</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="gallery-page">
+    <section class="gallery-hero">
+      <div class="gallery-hero-bg">
+        <img src="../img/background-torn.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="gallery-hero-inner">
+        <h1>Créations graphiques<span>.</span></h1>
+        <p>Affiches, magazines, packaging. Clique sur un projet pour lire le brief + voir toutes les pages.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="gallery-toolbar">
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="affiche">Affiches</button>
+            <button class="filter-btn" data-filter="magazine">Magazines</button>
+            <button class="filter-btn" data-filter="canette">Canettes</button>
+          </div>
+
+          <div class="search-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="gallery-search" class="search-input" type="search" placeholder="Rechercher une création..." aria-label="Rechercher une création" />
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+
+          <!-- Cloone -->
+          <article class="project-card gallery-card" data-category="affiche">
+            <div class="project-thumb" role="button" tabindex="0" aria-label="Ouvrir le projet">
+              <img src="../img/cloone-noir.png" alt="Affiche Cloone" loading="lazy" />
+              <span class="project-chip">Affiche</span>
+            </div>
+
+            <div class="project-info">
+              <h3>Cloone — entreprise fictive</h3>
+              <p>Série d’affiches autour d’un concept de clonage : ambiance, contrastes, typographie et déclinaisons.</p>
+
+              <div class="project-tech">
+                <span>DA</span><span>Typographie</span><span>Composition</span>
+              </div>
+
+              <div class="project-details" hidden>
+                <h4>Brief</h4>
+                <p>Créer une mini identité visuelle et la décliner sur plusieurs affiches cohérentes.</p>
+
+                <h4>Objectifs</h4>
+                <ul>
+                  <li>Installer une ambiance (couleurs, textures, contraste).</li>
+                  <li>Construire une hiérarchie typographique forte.</li>
+                  <li>Décliner en variantes sans perdre la cohérence.</li>
+                </ul>
+
+                <h4>Outils</h4>
+                <p>Photoshop / Illustrator.</p>
+
+                <h4>Résultat</h4>
+                <p>Une série d’affiches avec une DA reconnaissable et un impact visuel immédiat.</p>
+              </div>
+
+              <button class="project-open" type="button">
+                Ouvrir le projet <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </button>
+            </div>
+
+            <div class="project-gallery">
+              <img src="../img/cloone-rose.png" alt="Affiche Cloone – variante rose" loading="lazy" />
+              <img src="../img/cloone-noir.png" alt="Affiche Cloone – variante noire" loading="lazy" />
+            </div>
+          </article>
+
+          <!-- Magazines -->
+          <article class="project-card gallery-card" data-category="magazine">
+            <div class="project-thumb" role="button" tabindex="0" aria-label="Ouvrir le projet">
+              <img src="../img/tenue-indienne.png" alt="Magazine" loading="lazy" />
+              <span class="project-chip">Magazine</span>
+            </div>
+
+            <div class="project-info">
+              <h3>Magazines de tenues indiennes</h3>
+              <p>Couvertures + doubles pages : grilles, rythme, équilibre texte/image et hiérarchie de lecture.</p>
+
+              <div class="project-tech">
+                <span>Mise en page</span><span>Grilles</span><span>Hiérarchie</span>
+              </div>
+
+              <div class="project-details" hidden>
+                <h4>Brief</h4>
+                <p>Réaliser un rendu “édition” crédible : élégant, lisible, et cohérent sur plusieurs pages.</p>
+
+                <h4>Objectifs</h4>
+                <ul>
+                  <li>Mettre en place une grille pour alignements & cohérence.</li>
+                  <li>Faire respirer les pages (blancs, densité).</li>
+                  <li>Créer une hiérarchie claire (titres, intertitres, textes).</li>
+                </ul>
+
+                <h4>Outils</h4>
+                <p>Photoshop / InDesign.</p>
+
+                <h4>Résultat</h4>
+                <p>Un magazine lisible et équilibré, avec une identité visuelle cohérente.</p>
+              </div>
+
+              <button class="project-open" type="button">
+                Ouvrir le projet <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </button>
+            </div>
+
+            <div class="project-gallery">
+              <img src="../img/tenue-indienne.png" alt="Couverture" loading="lazy" />
+              <img src="../img/fashionindian.png" alt="Double page" loading="lazy" />
+            </div>
+          </article>
+
+          <!-- Canettes -->
+          <article class="project-card gallery-card" data-category="canette">
+            <div class="project-thumb" role="button" tabindex="0" aria-label="Ouvrir le projet">
+              <img src="../img/cannette-verte.png" alt="Canette" loading="lazy" />
+              <span class="project-chip">Packaging</span>
+            </div>
+
+            <div class="project-info">
+              <h3>Design de canette — boisson fictive</h3>
+              <p>Création de marque : logo, palette, déclinaisons et mockups réalistes pour un rendu “produit”.</p>
+
+              <div class="project-tech">
+                <span>Packaging</span><span>Branding</span><span>Mockup</span>
+              </div>
+
+              <div class="project-details" hidden>
+                <h4>Brief</h4>
+                <p>Créer un produit fictif : une marque, un design, puis décliner en plusieurs “saveurs”.</p>
+
+                <h4>Objectifs</h4>
+                <ul>
+                  <li>Lisibilité du logo et des infos clés.</li>
+                  <li>Cohérence entre déclinaisons (codes couleurs).</li>
+                  <li>Rendu pro grâce aux mockups.</li>
+                </ul>
+
+                <h4>Outils</h4>
+                <p>Illustrator / Photoshop.</p>
+
+                <h4>Résultat</h4>
+                <p>Une gamme cohérente, identifiable, avec un rendu réaliste.</p>
+              </div>
+
+              <button class="project-open" type="button">
+                Ouvrir le projet <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </button>
+            </div>
+
+            <div class="project-gallery">
+              <img src="../img/cannette-verte.png" alt="Vue 1" loading="lazy" />
+              <img src="../img/cannette-orange.png" alt="Vue 2" loading="lazy" />
+              <img src="../img/cannette-violet.png" alt="Vue 3" loading="lazy" />
+            </div>
+          </article>
+
+          <!-- Golden Car Wash -->
+          <article class="project-card gallery-card" data-category="affiche">
+            <div class="project-thumb" role="button" tabindex="0" aria-label="Ouvrir le projet">
+              <img src="../img/carwash1.png" alt="Golden Car Wash – affiche" loading="lazy" />
+              <span class="project-chip">Stage • Golden Car Wash</span>
+            </div>
+
+            <div class="project-info">
+              <h3>Golden Car Wash — Affiches (stage)</h3>
+              <p>Affiches promo/services : message direct, infos priorisées, retouches, et déclinaisons prêtes print & réseaux.</p>
+
+              <div class="project-tech">
+                <span>Affiche</span><span>Retouche</span><span>Communication</span>
+              </div>
+
+              <div class="project-details" hidden>
+                <h4>Brief</h4>
+                <p>Créer des visuels efficaces pour communiquer vite (promos, services, réseaux) et garder une cohérence de marque.</p>
+
+                <h4>Objectifs</h4>
+                <ul>
+                  <li>Hiérarchiser : offre → prix → bénéfice → CTA.</li>
+                  <li>Lisibilité mobile (réseaux) + print.</li>
+                  <li>Retouches propres et rendu “pro”.</li>
+                </ul>
+
+                <h4>Outils</h4>
+                <p>Photoshop / Illustrator.</p>
+
+                <h4>Résultat</h4>
+                <p>Des affiches prêtes à être diffusées, avec un message clair et une cohérence visuelle.</p>
+              </div>
+
+              <button class="project-open" type="button">
+                Ouvrir le projet <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </button>
+            </div>
+
+            <div class="project-gallery">
+              <img src="../img/carwash1.png" alt="Affiche 1" loading="lazy" />
+              <img src="../img/carwash2.png" alt="Affiche 2" loading="lazy" />
+              <img src="../img/carwash3.png" alt="Affiche 3" loading="lazy" />
+              <img src="../img/carwash4.png" alt="Affiche 4" loading="lazy" />
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========= MODALE ========= -->
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+    <div class="project-modal-backdrop" data-close="true"></div>
+
+    <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-label="Détails du projet">
+      <button class="project-modal-close" type="button" aria-label="Fermer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="project-modal-content">
+        <div class="modal-main-image">
+          <button class="modal-nav modal-prev" type="button" aria-label="Image précédente">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <img src="" alt="" id="modal-main-img" />
+
+          <button class="modal-nav modal-next" type="button" aria-label="Image suivante">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <button class="modal-zoom" type="button" aria-label="Agrandir l’image">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </button>
+        </div>
+
+        <div class="modal-right">
+          <h2 id="modal-title"></h2>
+          <p id="modal-description" class="modal-summary"></p>
+          <div id="modal-tech" class="project-tech modal-tech"></div>
+          <div id="modal-details" class="modal-details"></div>
+          <div id="modal-thumbs" class="modal-thumbs"></div>
+
+          <a href="#" id="modal-video-link" class="btn btn-ghost modal-video-link" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-youtube"></i> Voir la vidéo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========= VIEWER ========= -->
+  <div class="image-viewer" id="image-viewer" aria-hidden="true">
+    <div class="image-viewer-backdrop" data-close="true"></div>
+    <div class="image-viewer-dialog" role="dialog" aria-modal="true" aria-label="Aperçu image">
+      <button class="image-viewer-close" type="button" aria-label="Fermer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="viewer-img" src="" alt="" />
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> – Luxchan Vasanthan</p>
+      <p>Créations graphiques.</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js" defer></script>
+</body>
+</html>
