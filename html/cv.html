@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV – Luxchan</title>
+  <meta name="description" content="CV de Luxchan Vasanthan (PDF + aperçu)." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="header">
+    <div class="nav-container">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark">LV</span>
+        <span class="logo-text">Luxchan <span>Vasanthan</span></span>
+      </a>
+
+      <button class="nav-toggle" id="menu-icon" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="../index.html#hero">Accueil</a>
+        <a href="../index.html#about">À propos</a>
+        <a href="../index.html#skills">Compétences</a>
+
+        <div class="nav-item has-mega" id="mega-item">
+          <button class="nav-link mega-trigger" id="mega-trigger" type="button" aria-expanded="false" aria-controls="mega-menu">
+            Réalisations <span class="chevron">⌄</span>
+          </button>
+
+          <div class="mega-menu" id="mega-menu">
+            <div class="mega-col">
+              <h3>Développement web</h3>
+              <a href="./galerie-web.html"><span class="emoji">💻</span> Sites web & interfaces</a>
+            </div>
+            <div class="mega-col">
+              <h3>Graphisme</h3>
+              <a href="./galerie-graphisme.html"><span class="emoji">🎨</span> Affiches & créations</a>
+            </div>
+            <div class="mega-col">
+              <h3>Audiovisuel</h3>
+              <a href="./galerie-audiovisuel.html"><span class="emoji">🎬</span> Projet audiovisuel</a>
+            </div>
+          </div>
+        </div>
+
+        <a class="active" href="./cv.html">CV</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="cv-page">
+    <section class="gallery-hero">
+      <div class="gallery-hero-bg">
+        <img src="../img/background-torn.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="gallery-hero-inner">
+        <h1>Mon CV<span>.</span></h1>
+        <p>Version PDF + aperçu. Tu peux l’ouvrir dans un onglet ou le télécharger.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="cv-card">
+          <div class="cv-actions">
+            <a class="btn btn-main" href="../img/CV-Luxchan-Vasanthan.pdf" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-up-right-from-square"></i> Ouvrir le PDF
+            </a>
+            <a class="btn btn-ghost" href="../img/CV-Luxchan-Vasanthan.pdf" download>
+              <i class="fa-solid fa-download"></i> Télécharger
+            </a>
+          </div>
+
+          <div class="cv-embed">
+            <iframe title="CV Luxchan Vasanthan" src="../img/CV-Luxchan-Vasanthan.pdf#view=fitH"></iframe>
+          </div>
+
+          <p class="form-note">Si le PDF ne s’affiche pas (selon navigateur), utilise “Ouvrir le PDF”.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> – Luxchan Vasanthan</p>
+      <p>CV.</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js" defer></script>
+</body>
+</html>
